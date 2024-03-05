@@ -1,6 +1,8 @@
 import EmailForm from "@/components/email-form";
 import ItemList from "@/components/item-list";
 import Image from "next/image";
+import { Button} from "@/components/ui/button";
+import Link from "next/link";
 
 
 const HomePage = () => {
@@ -34,6 +36,9 @@ const HomePage = () => {
           />
         </section>
       </article>
+      <Button className="text-white">
+        <Link href="/about">About</Link>
+      </Button>
     </div>
     
   )
